@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-	"start": "node --whatch index.js",
-    "test": "node --test ./tests"
+    "start": "node --watch ./server/src/index.js",
+    "test": "node --test ./server/tests/"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
