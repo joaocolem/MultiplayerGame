@@ -1,15 +1,10 @@
-import express from 'express';
+const express = require('express');
 
 const app = express();
 const port = 3000;
-const view = '/app/client/public/';
 
-app.listen(port, () => {
-	console.log(`Listen to port ${port}`);
-});
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-	res.sendFile(view, 'index.html');
+	res.sendFile('./index.html');
 })
-
-export { port };
