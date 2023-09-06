@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node --watch ./server/src/index.js",
-    "test": "node --test ./server/tests/"
+    "test:server": "node --test ./server/tests/",
+    "test:client": "node --test ./client/tests/"
   },
   "keywords": [],
   "author": "",
